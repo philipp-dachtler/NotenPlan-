@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#ffffff" />
-<link rel="apple-touch-icon" href="icon.png" />
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NotenPlan – Minimalistische Noten-App</title>
-<link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NotenPlan – Minimalistische Noten-App</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PWA: Manifest & Icon -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 </head>
 <body>
-<header>
-  <h1>NotenPlan</h1>
-</header>
+  <header>
+    <h1>NotenPlan</h1>
+  </header>
 
-<main>
-  <section id="add-subject">
-    <input type="text" id="new-subject" placeholder="Fach hinzufügen (z. B. Mathe)" aria-label="Fach hinzufügen" />
-    <button id="add-subject-btn" aria-label="Fach hinzufügen">+</button>
-  </section>
+  <main>
+    <section id="add-subject">
+      <input type="text" id="new-subject" placeholder="Fach hinzufügen (z. B. Mathe)" aria-label="Fach hinzufügen" />
+      <button id="add-subject-btn" aria-label="Fach hinzufügen">+</button>
+    </section>
 
-  <section id="subjects-container">
-    <!-- Hier kommen die Fächer rein -->
-  </section>
+    <section id="subjects-container">
+      <!-- Hier kommen die Fächer rein -->
+    </section>
 
-  <section id="overall-average">
-    <h2>Gesamtdurchschnitt: <span id="overall-average-value">–</span></h2>
-  </section>
-</main>
+    <section id="overall-average">
+      <h2>Gesamtdurchschnitt: <span id="overall-average-value">–</span></h2>
+    </section>
+  </main>
 
-<script src="script.js"></script>
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
 </body>
 </html>
