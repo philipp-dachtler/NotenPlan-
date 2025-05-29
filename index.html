@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NotenPlan – Minimalistische Noten-App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>NotenPlan</h1>
+</header>
+
+<main>
+  <section id="add-subject">
+    <input type="text" id="new-subject" placeholder="Fach hinzufügen (z. B. Mathe)" aria-label="Fach hinzufügen" />
+    <button id="add-subject-btn" aria-label="Fach hinzufügen">+</button>
+  </section>
+
+  <section id="subjects-container">
+    <!-- Hier kommen die Fächer rein -->
+  </section>
+
+  <section id="overall-average">
+    <h2>Gesamtdurchschnitt: <span id="overall-average-value">–</span></h2>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
